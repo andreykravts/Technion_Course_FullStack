@@ -1,0 +1,53 @@
+.firstShadow {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+
+    font-size: larger;
+    font-family:serif;
+    
+}
+.secondShadow {
+    /*Inner Shadow*/
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.thirdShadow {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    
+}
+
+.shadow1 {
+	margin: 45px;
+	background-color: rgb(68,68,68); /* Needed for IEs */
+
+	-moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	-webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+	box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    font-size: larger;
+    font-weight: bold;
+    font-family: cursive;
+}
+.shadow1 .content {
+	position: relative; /* This protects the inner element from being blurred */
+	padding: 100px;
+	background-color: #DDD;
+    font-size: larger;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+li {
+    box-shadow: 5px 2px cornflowerblue;
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}

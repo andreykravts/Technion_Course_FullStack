@@ -1,0 +1,46 @@
+html{
+    font-size: 62.5%;
+    /*10px*/
+    /*16px= 16rem/10*/
+}
+.test{
+    /*
+    לא עובדים כי PX נקודה קבוע ולא עוקבת אחרי USER
+    פשוט משנים פונט דרך GOOGLE וFONT לא משתנה
+    font-size: 20px; ABSOLUT  לא משתנה
+    לא עובדים FONT SIZE PX
+    במקום עובדים עם 
+    FONTSIZE 20REM עוקב אחרי בחירה של USER
+    20em
+    relative unit
+    ביחס למה שנתן USER
+    יחידה חדשה תומכת בACCSESABILITY
+    use can i use?
+    */
+    font-size: 2rem;
+
+}
+
+div{
+    border:  2px solid blue;
+
+}
+.div-p{
+    font-size: 2rem; 
+    /* FONTמכפיל DIV*/
+    /*לעבוד רק עם REM בFONTSIZE*/
+    line-height: 1.5;
+    /*em rem אבא הוראה רק ורק רוצה קצת הבדל*/
+    /*font-size: inherit; inherit לוקח מאבא*/
+
+}
+.p1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    font-size: 1.6rem;
+}
+.p2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    font-style: 1.6rem;
+}

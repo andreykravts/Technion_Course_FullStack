@@ -1,0 +1,19 @@
+h1 {
+
+    color: red;
+}
+
+span {
+    color: blue;    
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    /*font-size: 20px; לא עושים עם px*/
+    font-weight: 500;
+    font-style: normal;
+    /*serif, sans-serif,cursive,fantasy,monospace*/
+    font-family: sans-serif;
+}
+p {
+    /*safe font stack*/
+    font-family: Arial, Helvetica, sans-serif; /*קומבינציה מוכרת*/
+}

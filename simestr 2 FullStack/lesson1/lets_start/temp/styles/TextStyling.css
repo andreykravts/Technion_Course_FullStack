@@ -1,0 +1,32 @@
+body {
+    color: navy;
+    font-weight: bold;
+}
+h1 {
+    font-family: serif;
+    font-size: 5em;
+    letter-spacing: 7px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+figcaption {
+    font-style: italic;
+    font-size: 1.5em;
+    color: red;
+    text-shadow: 2px 2px 20px red;
+    
+}
+p {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: justify;
+    line-height: 1.7;
+    color: green;
+}
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}

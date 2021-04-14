@@ -1,0 +1,66 @@
+<!DOCTYPE html>     
+<html lang="en">      
+<head>
+    <title>HTML5 Semantics</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p>Below is a simple page structure with semantic elements.
+       It contains &lt;header&gt; with &lt;nav&gt;, two &lt;article&gt;, 
+       &lt;aside&gt; and &lt;footer&gt; elements.
+       With some styling in CSS we can organize these elements 
+       that will look for example as:</p>
+     <img src="../images/section-ex.png" alt="#" width="200"
+          style="mix-blend-mode: multiply;">
+     <p>See another page example in <a href="hotel-site/index.html" Target="_blank">
+        Sweet Hotel</a> (use "View page source" to explore the code).
+        The site contains all we have learned until now.</p>
+    <hr>
+
+    <header>
+      <h1><abbr title="Hypertext Markup Language">HTML5</abbr></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Presentation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <h2><code>&lt;nav&gt;</code> is not for ALL Links </h2>
+      <p><code>&lt;nav&gt;</code> element  contains links.
+         Not all groups of links on a page need to be in a nav element,
+         only groups of primary navigation links...</p>
+    </article>
+    <article>
+      <h2><code>&lt;main&gt;</code> is Special</h2>
+      <p>&lt;main&gt; content should be unique to the document,  
+         excluding any content that is repeated across a 
+         set of documents such as sidebars, 
+         navigation links ...</p>
+    </article>
+    <aside>
+      <h2>Best HTML5 Sites</h2>
+      <p><code>&lt;aside&gt;</code> content should be related 
+         to the surrounding content.</p>
+      <details open>
+         <summary>
+            Look for HTML5 beautiful sites here (using details element)
+         </summary>
+         <ul>
+           <li><a href="http://www.nationalgeographic.com/magazine/2016/05/yellowstone-national-parks-bears-video" target="_blank">
+              A Bears-Eye View of Yellowstone</a></li>
+           <li><a href="https://cavalierchallenge.com/" target="_blank">Game</a></li>
+           <li><a href="http://www.muller.it/" target="_blank">Muller</a></li>
+         </ul>
+      </details>
+    </aside>
+    <footer>
+      <p>Copyright &copy; 2016 All rights reserved.</p>
+    </footer>
+
+    <hr>
+</body>
+</html>
+

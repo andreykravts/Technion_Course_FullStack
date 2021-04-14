@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    background-color: #d2e1e6;
+}
+
+
+header,
+footer {
+    margin: 50px;
+}
+
+footer {
+	text-align: center;
+}
+
+h1 {
+    margin-bottom: 80px;
+
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 1px #ddd,
+    0px 2px 1px #d6d6d6,
+    0px 3px 1px #ccc,
+    0px 4px 1px #c5c5c5,
+    0px 5px 1px #c1c1c1,
+    0px 6px 1px #bbb,
+    0px 7px 1px #777,
+    0px 8px 3px rgba(100, 100, 100, 0.4),
+    0px 9px 5px rgba(100, 100, 100, 0.1),
+    0px 10px 7px rgba(100, 100, 100, 0.15),
+    0px 11px 9px rgba(100, 100, 100, 0.2),
+    0px 12px 11px rgba(100, 100, 100, 0.25),
+    0px 13px 15px rgba(100, 100, 100, 0.3);
+}
+
+
+h3 {
+    font-style: italic;
+}
+
+.web-dev {
+    background-color: transparent;
+    float: right;
+    width: 40%;
+    mix-blend-mode: multiply;
+    padding-bottom: 20px;
+}
+
+
+figure img {
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    width: 50%;
+    padding: 20px 50px;
+
+}
+
+article section {
+    margin-bottom: 50px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.nav-bot {
+    margin: 40px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content:  space-around;
+}
+nav > a {
+    
+}
+
+
+nav ul {
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*
+ * scrollbar
+ */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #555;
+	border-radius: 10px;
+	outline: 2px solid slategrey;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: rgb(190, 138, 138);
+}
+
+/*
+ * media
+ */
+
+@media screen and (max-width: 699px) {
+    main {
+        flex-direction: column;
+    }
+    
+    header, footer {
+        margin: 10px;
+    }
+    
+    h1{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    h2, h3 {
+        font-size: 16px;
+    }
+    
+    article {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .web-dev {
+        display: none;
+    }
+}

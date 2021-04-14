@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			HTML5 and CSS3 Fundamentals
+		</title>
+		<style>
+			strong{
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 24px;
+			}
+			h2{
+				font-size: 25px;
+				font-family: sans-serif;
+				
+			}
+			
+			p
+			{
+				
+				text-align: left;
+				line-height: 25px;
+				font-size: 20px;
+				font-family: sans-serif;
+				word-spacing: 4px;
+				max-lines: inherit;
+			}
+			h3{
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				line-height: 50px;
+			}
+			ul{
+			
+				font-size: 20px;
+			}
+			li{
+				font-weight: bold;
+				font-size: 20px;
+				font-style: normal;
+				font-family: Arial, Helvetica, sans-serif;
+				word-spacing: 7px;
+				
+			}
+		</style>
+	</head>
+<body>
+<!-- the following must be h1 element -->
+<h1>HTML5 and CSS3 Fundamentals</h1>
+
+
+<h2>Table Of Contents</h2>
+<!-- the following are links. make the links one below the other by using
+	 ul and a inside each li -->
+	 <ul>
+		<li id="www"><a href="#wwwreturn">World Wide Web overview</a></li>
+		<li id="DomainNames"><a href="#DomainNamesReturn">Domain Names</a></li>
+		 <li id="stdgroups"><a href="#stdGroup">Standards Groups</a></li>
+		 <li id="webbrowsers"><a href = "#WebBrowsers">Web Browsers</a></li>
+		 <li id="pagestructure"><a href = "#PageStructure">Page structure</a></li>
+	 </ul>
+
+
+<!-- the following is p element -->
+<p>For more information see <a href = "https://he.wikipedia.org/wiki/HTML5" >HTML 5 Wiki</a>.</p>
+
+<!-- the following is <hr> element -->
+<hr>===================================================================<hr>
+
+<!-- the following is h2 element -->
+<h2>Background Every Web Developer Needs to Know</h2>
+
+<!-- the following is h3 element -->
+<a href="#www"><h3 id="wwwreturn">A Brief Overview of the World Wide Web</h3></a>
+
+<!-- the following is p element -->
+
+<p>
+	The World Wide Web started out as a means for sharing scientific resources like research documentation
+between governmental and academic institutions. It took time for the technologies and
+practices to evolve beyond its original purpose.
+</p>
+
+<!-- the following is p element, the same is for all the following paragraphs and paragraphs after h headers -->
+<p>From a technical perspective, the World Wide Web is comprised of several technologies.</p>
+
+<!-- the following is p element -->
+<ol>
+	<li>
+		<p>
+			First, it involves a simple markup (the Hyper-text Markup Language, or HTML) to both structure and format textual
+		information. When first introduced its claim to fame was the hyperlink which allowed the publisher of a document to add
+		a link to other research papers available from across the world, creating a virtual web of information.
+	</p>
+	</li>
+	<li>
+		<!-- the following is p element -->
+		<p>Second, one or more interlinked pages are published to a server that is connected to an open network which we know today
+			as the Internet.</p>
+		</li>
+</ol>
+
+
+
+<!-- the following is p element -->
+<p>
+	A protocol was devised that specialized in allowing a request/response-style communication between two computers. In
+	other words,
+	<b>
+		one user requests a document by typing an address for a document into a special program called a web
+		browser , and the web browser packages up that request and sends it out into the network.
+	</b>  
+	The request takes the form of
+	a specially formatted packet of data. You can think of this packet of information like a self-addressed stamped envelope
+	-- containing both the address of the information requested and the address where that information should be sent back
+	to. This specially formatted packet is known as Hyper-text Transfer Protocol , or rather, HTTP , and for simplicity's
+	sake you can think of it merely as an electronic envelope.
+</p>
+
+<!-- the following is p element -->
+<p>The HTTP request message is routed through a series of network wires and routers (i.e., devices that know how to forward
+	HTTP messages closer to their destination) spanning the globe using (ideally) the shortest route possible until it
+	arrives at its destination, the web server at the address the requestor typed into the web browser. The web server
+	responds to the request by locating the requested document or resource (in the figure, the index.html file), packaging
+	it up using the same HTTP style envelope, then sending the requested document back on to the network. The connection
+	would only take a fraction of a second and once the computer served up the request, it would not retain any information
+	about that request in its memory. See next Figure for a diagram of interactivity between the client and server
+	computers.</p>
+
+<!-- the following has to be img element. must be located in images folder - make a proper path -->
+<p style="text-align: center;"><img src="/images/www-diagram.gif" alt = "this is an image of the diagrams" width="1000" height="350"></p>
+
+<!-- the following is p element -->
+<p>A diagram of route from the user request to the web server and back again
+	Figure. (1) The HTTP Request is (2) routed across the internet to the (3) server which serves the (4) requested file
+	back in the body of an HTTP Response message. (5) The HTTP Response is routed across the internet to the original
+	requestor. (6) The requested file is parsed and displayed in the user's web browser.</p>
+
+<!-- the following is p element -->
+<p>Once the requested document is delivered through the network back to requestor, that document is loaded into the web
+	browser. The browser parses through the HTML and decides how to render (or rather, display) its content and appearance
+	on the computer screen.</p>
+
+
+<!-- the following is h3 element -->
+<a href="#DomainNames"><h3 id="DomainNamesReturn">What Are Domain Names?</h3></a>
+
+
+<p>The request that users type into web browsers originally looked something like this: http://157.123.23.44/index.htm
+	Why the series of numbers? Each computer on this network was assigned an address, called an Internet Protocol
+	Address, or IP Address. This was assigned through a lower-level protocol called Transmission Control Protocol /
+	Internet Protocol, or rather, TCP/IP. It was the foundational technology that allowed requests to be routed to the
+	appropriate server that contained a given resource, or rather, web page. However, because the IP address for a
+	computer would change occasionally for a given computer or institution, they devised a system called the
+	<strong>Domain Name System</strong>, or rather, the <strong>DNS</strong>, to turn a friendly name like:
+	<br><br>mit.edu ...
+	<br><br>into the actual "location", like:
+	<br><br>18.72.0.3
+</p>
+
+<!-- the following is p element -->
+<p>A system of top-level Domain Names was created ... .edu for educational institutions, .mil for Military, .gov for
+	Government, .net for Network related resources, .org for Non-profit organizations, .com for Commercial organizations,
+	etc. Later, other countries and a plethora of top-level domains were added and others for commercial and other
+	interests.
+	</p>
+<!-- the following is p element -->
+<p>The web browser will query databases of domain names and their associated IP Addresses and will translate the requests
+	automatically for the user without his or her knowledge. Typically, each Internet Service Provider has a Domain Name
+	System server that can be queried for resolving Domain Names into IP Addresses. The databases that contain this Domain
+	Name information stay synchronized around the globe, although sometimes the synchronization process can take minutes or
+	hours to complete.</p>
+
+
+<!-- the following is h3 element -->
+<a href = "#stdgroups" ><h3 id="stdGroup">The Purpose for Standards Groups</h3></a>
+
+<!-- the following is p element -->
+<p>At every step of the way, one or more organizations were formed to help identify standards for these technologies
+	comprised of experts and luminaries who were pushing these technologies forward. They would meet both virtually and in
+	person to define and discuss the merits of adding new features to a given standard and would encourage organizations who
+	were creating hardware and software to follow these standards so that products from different vendors could work
+	together seamlessly. Perhaps one of the most influential and important standards body you will hear about is the W3C ,
+	or rather, the World Wide Web Consortium . They were one of the groups responsible for the latest version of HTML,
+	version 5.</p>
+
+<!-- the following is <hr> element -->
+<hr>===================================================================<hr>
+<a href="Browsers.html#WebBrowsers"><strong style="font-size: 20px;" >Go to last paragraph</strong></a>
+
+<!-- make the links in one line, use &nbsp; entity -->
+<ul>
+	<li><a href="#wwwreturn">World Wide Web overview&nbsp;</a></li>
+	<li><a href="#DomainNamesReturn">Domain Names&nbsp;</a></li>
+	<li><a href="#stdGroup">Standards Groups&nbsp;</a></li>
+	<li><a href="#WebBrowsers">Web Browsers&nbsp;</a></li>
+	<li><a href="#PageStructure">Page structure&nbsp;</a></li>
+</ul>
+
+
+<!-- the following is p element -->
+<!-- make Copyright by special symbol &copy; -->
+<p>Design by <b>&copy Copyright 2020</b></p>
+</body>
+</html>

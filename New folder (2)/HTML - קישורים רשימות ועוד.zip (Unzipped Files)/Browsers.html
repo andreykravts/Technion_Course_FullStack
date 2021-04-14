@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--#region--><!--Title-->
+		<title>
+			HTML5 and CSS3 Fundamentals
+		</title>
+		
+
+
+
+		<!--#endregion-->
+		<!--#region--><!--style-->
+			<style>
+			strong{
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: 24px;
+			}
+			h2{
+				font-size: 25px;
+				font-family: sans-serif;
+				
+			}
+			
+			p
+			{
+				
+				text-align: left;
+				line-height: 25px;
+				font-size: 20px;
+				font-family: sans-serif;
+				word-spacing: 4px;
+				max-lines: inherit;
+			}
+			h3{
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				line-height: 50px;
+			}
+			ul{
+			
+				font-size: 20px;
+			}
+			li{
+				font-weight: bold;
+				font-size: 20px;
+				font-style: normal;
+				font-family: Arial, Helvetica, sans-serif;
+				word-spacing: 7px;
+				
+			}
+		</style>
+		<!--#endregion-->
+	</head>
+<body><!--#region--> <!--body-->
+<!-- the following must be h1 element -->
+<h1>HTML5 and CSS3 Fundamentals</h1>
+
+
+<h2>Table Of Contents</h2>
+<!-- the following are links. make the links one below the other by using
+	 ul and a inside each li -->
+	 <ul>
+		<li id="www"><a href="#wwwreturn">World Wide Web overview</a></li>
+		<li id="DomainNames"><a href="#DomainNamesReturn">Domain Names</a></li>
+		 <li id="stdgroups"><a href="#stdGroup">Standards Groups</a></li>
+		 <li id="webbrowsers"><a href = "#WebBrowsers">Web Browsers</a></li>
+		 <li id="pagestructure"><a href = "#PageStructure">Page structure</a></li>
+	 </ul>
+
+
+<!-- the following is p element -->
+<p>For more information see <a href = "https://he.wikipedia.org/wiki/HTML5" >HTML 5 Wiki</a>.</p>
+
+<!-- the following is <hr> element -->
+<hr>===================================================================<hr>
+<a href="index.html#wwwreturn"><strong  style="font-size:20px;">Go to first paragraph</strong></a>
+
+<!-- the following is h2 element -->
+<a href="#webbrowsers"><h2 id="WebBrowsers">Web Browsers</h2></a>
+
+
+<!-- the following is h3 element -->
+<h3>How Web Browsers Parse HTML</h3>
+
+<!-- the following is p element -->
+<p>Once the requested web page has been returned, it will be parsed by a web browser then displayed on screen.</p>
+
+<!-- the following is p element -->
+<p>The term "parse" refers to the process of breaking apart the HTML document to better "understand" the instructions coded
+	there in. During this phase, other resources, like external CSS files or JavaScript files, or images, must be requested
+	so that the browser can get a complete picture of the code it is responsible for ultimately rendering. After all those
+	external resources are downloaded and analyzed, they are typically loaded into the computer's memory as a tree, or
+	hierarchy, of software objects then passed to the rendering engine component of the browser for display (some objects
+	"own" or are parents to other objects). A simple example might be that a paragraph is a parent to each sentence, which
+	is a parent to each word. There might be other tags and graphical elements that the paragraph owns as well. This is
+	simply part of the process of deciding what technique the browser will use to ultimately render the HTML to the screen.</p>
+
+<!-- the following is p element -->
+<p>There are many web browsers that are popular today:
+	<ul>
+		<li>Chrome - the top browser on PCs</li>
+			<li>Edge - the default browser in Windows 10</li>
+			<li>Internet Explorere - an obsolete browser, as no new features are being developed</li>
+			<li>Firefox</li>
+			<li>...</li>
+	
+</ul>
+
+</p>
+<!-- the following is img element. must be located in images folder - make a proper path -->
+<p style="text-align: center;"><img src="/images/browsers.jpg" alt="this is an image of the browsers" >
+</p>
+
+<!-- the following is h3 element -->
+<a href="#pagestructure"><h3 id="PageStructure">HTML5 Web Pages</h3></a>
+
+
+<!-- the following is p element -->
+<p>Each web page should declare which standard it has promised to adhere to. This is called a DOCTYPE , and it is the
+	reason that we typed this:</p>
+
+<!-- use special entities for < (&lt;) and for > &gt; otherwise browser will read it as beginning of the doc -->
+&lt;!DOCTYPE html&gt; 
+
+<!-- the following is p element -->
+<p>... at the very top of our web page. This instruction told any web browser that may open it that it should be evaluated
+	as an HTML5 document, as opposed to an HTML document of another version. Every instruction should adhere to the HTML5
+	specification. If it doesn't, the renderer may not know how to properly apply the rules of HTML5 to the document and
+	must drop back into something called "quirks mode" where the browser will take a best guess on how to best render the
+	web page. "Quirks mode" exists because there are plenty of poorly coded HTML page in the world and the web browser wants
+	to try to the best of its ability to render something to the end user. Since writing HTML that doesn't validate against
+	a standard can produce inconsistent results, web developers are strongly encouraged to take great care in the code they
+	write. Most tools that allow you to write HTML pages incorporate a validator to ensure the code you write validates
+	against your chosen HTML specification.</p>
+
+<!-- the following is p element -->
+<p>Once the document has been parsed, the browser can begin the rendering process. "Render" means that the code will be
+	translated into visual elements on screen using algorithms and rules coded into the rendering engine, the components in
+	the web browser responsible for this activity.</p>
+
+<!-- the following is p element -->
+<p>And here is where things start to get messy. Each rendering engine is written by different developers each determining
+	how to satisfy the requirements of the specification in their code. Most of the time, your valid HTML5 code will look
+	"close enough" on most browser vendor and versions. However, that's unfortunately not always the case and so it is
+	important to set your expectations and give you a little heads up on how to deal with the inevitable situation where you
+	want to use some new feature that is either supported differently in different browsers or is not supported at all in
+	older browsers.</p>
+
+<!-- the following is p element -->
+<p>Let's start with the question if there's a standard in place, why do browser vendors implement functionality
+	differently? Often this is a matter of interpretation of the specification. The specification details how something
+	should work and provides some scenarios. From a technical perspective, there are situations not covered explicitly by
+	the specification and vendors need to decide how THEY will handle it. In other cases, different vendors have different
+	timeframes on when they plan on supporting the functionality.</p>
+
+<!-- the following is <hr> element -->
+<hr>===================================================================<hr>
+
+<!-- make the links in one line, use &nbsp; entity -->
+<ul>
+	<li><a href="#wwwreturn">World Wide Web overview&nbsp;</a></li>
+	<li><a href="#DomainNamesReturn">Domain Names&nbsp;</a></li>
+	<li><a href="#stdGroup">Standards Groups&nbsp;</a></li>
+	<li><a href="#WebBrowsers">Web Browsers&nbsp;</a></li>
+	<li><a href="#PageStructure">Page structure&nbsp;</a></li>
+</ul>
+
+
+<!-- the following is p element -->
+<!-- make Copyright by special symbol &copy; -->
+<p>Design by <b>&copy Copyright 2020</b></p>
+</body><!--#endregion--><!--body-->
+</html>
